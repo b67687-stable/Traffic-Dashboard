@@ -1,4 +1,18 @@
+<div align="center">
+
 # Traffic Dashboard
+
+</div>
+
+<p align="center">
+  <img src="docs/badges/html.svg" alt="HTML">
+  <img src="docs/badges/actions.svg" alt="GitHub Actions">
+  <img src="docs/badges/license.svg" alt="MIT">
+  <br>
+  <sub>Built with AI assistance — see <a href="./CREDITS.md">CREDITS.md</a></sub>
+  <br>
+  <a href="./CREDITS.md"><img src="docs/badges/deepseek.svg" alt="DeepSeek V4 Flash"></a>
+</p>
 
 A reusable GitHub Actions workflow + HTML dashboard for tracking clone, download, and view statistics across repositories. Originally embedded in every repo individually — now consolidated here as a shared resource.
 
