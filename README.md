@@ -8,7 +8,15 @@
   <img src="docs/badges/html.svg" alt="HTML">
   <img src="docs/badges/actions.svg" alt="GitHub Actions">
   <img src="docs/badges/license.svg" alt="MIT">
-  <br>
+</p>
+
+<p align="center">
+  <a href="https://b67687-stable.github.io/Traffic-Dashboard/">
+    <img src="docs/badges/dashboard-preview.svg" alt="Traffic Dashboard preview" width="760">
+  </a>
+</p>
+
+<p align="center">
   <sub>Built with AI assistance — see <a href="./CREDITS.md">CREDITS.md</a></sub>
   <br>
   <a href="./CREDITS.md"><img src="docs/badges/deepseek.svg" alt="DeepSeek V4 Flash"></a>
@@ -31,7 +39,7 @@ Copy [`.github/workflows/traffic-badges.yml`](.github/workflows/traffic-badges.y
 
 ### 3. (Optional) Deploy the dashboard
 
-The [`dashboard/`](dashboard/) folder contains an HTML dashboard page. Serve it via GitHub Pages from the `dashboard/` directory for a visual overview.
+The [`index.html`](index.html) file is an HTML dashboard page. Serve it via GitHub Pages from the root for a visual overview.
 
 ## How it works
 
@@ -47,4 +55,3 @@ The [`dashboard/`](dashboard/) folder contains an HTML dashboard page. Serve it 
 | ------------------------------------------------------------------ | ----------------------------------------------------- |
 | `.github/workflows/traffic-badges.yml`                             | Main workflow — collects stats, generates badges      |
 | [`index.html`](https://b67687-stable.github.io/traffic-dashboard/) | HTML dashboard for visual overview (served via Pages) |
-
