@@ -24,10 +24,10 @@ Copy [`.github/workflows/traffic-badges.yml`](.github/workflows/traffic-badges.y
 
 ### 2. Configure secrets and variables
 
-| Setting              | Type                | Description                                                          |
-| -------------------- | ------------------- | -------------------------------------------------------------------- |
-| `TRAFFIC_GIST_ID`    | Repository variable | Gist ID for storing badge state (auto-created on first run if empty) |
-| `TRAFFIC_GIST_TOKEN` | Repository secret   | Fine-grained PAT with gist write access                              |
+| Setting              | Type                | Description                                                                             |
+| -------------------- | ------------------- | --------------------------------------------------------------------------------------- |
+| `TRAFFIC_GIST_ID`    | Repository variable | Gist ID for storing badge state (auto-created on first run if empty)                    |
+| `TRAFFIC_GIST_TOKEN` | Repository secret   | Fine-grained PAT with **Gists (R/W)**, **Traffic (R)**, and **Actions (R)** permissions |
 
 ### 3. (Optional) Deploy the dashboard
 

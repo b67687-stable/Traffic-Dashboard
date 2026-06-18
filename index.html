@@ -7,6 +7,8 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <script
       src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"
+      integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC"
+      crossorigin="anonymous"
       onerror="
         document.getElementById('chart-fallback').classList.remove('hidden')
       "
@@ -1927,9 +1929,7 @@
           show("installs-archive-note");
           setText(
             "installs-archive-note",
-            "Could not load historical data: " +
-              err.message +
-              ". Showing current rolling window.",
+            "Could not load historical data. Showing current rolling window.",
           );
           renderInstallsChart(currentState.dailyHistory || []);
         }
@@ -2359,7 +2359,7 @@
         } catch (err) {
           hide("stars-loading");
           show("stars-note");
-          setText("stars-note", "Could not load star history: " + err.message);
+          setText("stars-note", "Could not load star history.");
           console.error("Star history fetch failed:", err);
         }
       }
@@ -3127,7 +3127,7 @@
           el.style.display = "none";
         } else if (state === "error") {
           el.className = "stats-error";
-          el.innerHTML =
+          el.textContent =
             "GitHub is still computing this data. Refresh to try again.";
         }
       }
