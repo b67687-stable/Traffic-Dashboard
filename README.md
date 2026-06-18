@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://b67687-stable.github.io/Traffic-Dashboard/">
+  <a href="https://b67687.github.io/Traffic-Dashboard/">
     <img src="docs/badges/dashboard-preview.svg" alt="Traffic Dashboard preview" width="760">
   </a>
 </p>
@@ -54,4 +54,4 @@ The [`index.html`](index.html) file is an HTML dashboard page. Serve it via GitH
 | File                                                               | Purpose                                               |
 | ------------------------------------------------------------------ | ----------------------------------------------------- |
 | `.github/workflows/traffic-badges.yml`                             | Main workflow — collects stats, generates badges      |
-| [`index.html`](https://b67687-stable.github.io/traffic-dashboard/) | HTML dashboard for visual overview (served via Pages) |
+| [`index.html`](https://b67687.github.io/Traffic-Dashboard/) | HTML dashboard for visual overview (served via Pages) |

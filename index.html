@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="page-title">Repo - Traffic Dashboard</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"
       integrity="sha384-vsrfeLOOY6KuIYKDlmVH5UiBmgIdB1oEf7p01YgWHuqmOHfZr374+odEv96n9tNC"
@@ -1302,7 +1302,7 @@
       // /RepoName/ or /RepoName/something/  →  "RepoName"
       const REPO_NAME =
         window.location.pathname.split("/")[1] || "Traffic-Dashboard";
-      const REPO_OWNER = "b67687-stable";
+      const REPO_OWNER = window.location.hostname.split('.')[0];
 
       // ── Per-repo config: gist IDs + creation date ───────────────
       const REPO_CONFIG = {
