@@ -24,6 +24,16 @@
 
 A reusable GitHub Actions workflow + HTML dashboard for tracking clone, download, and view statistics across repositories. Originally embedded in every repo individually — now consolidated here as a shared resource.
 
+## Features
+
+| Tab | Data | Source |
+|---|---|---|
+| **Overview** | Combined daily activity chart with toggles for views, clones, downloads | `state.json` dailyHistory |
+| **Installs** | Downloads, clones, organic clones, activity windows (24h/7d/30d) | `state.json` dailyHistory |
+| **Views** | Page views, unique visitors, top referrers, popular pages (14-day snapshot) | `state.json` views/referrers/paths |
+| **Community** | Stars, forks, open issues, star history chart | `state.json` metadata + live GitHub API |
+| **Dev** | CI breakdown, raw vs organic clones, commit activity, code frequency, participation, punch card, contributors | `state.json` + live GitHub API |
+
 ## Usage
 
 ### 1. Add the workflow
@@ -90,16 +100,6 @@ index.html (fetches state.json from Gist)
 **Fully static frontend** — Zero build step, zero server. Pure HTML + JS that fetches JSON from a raw Gist URL. Chart.js loaded from CDN with SRI hash. Deployed via GitHub Pages from `/` on `main`.
 
 **Org-agnostic auto-detection** — `REPO_OWNER` is derived from the Pages hostname and `REPO_NAME` from the URL path, so the same `index.html` works under any GitHub Pages domain without hardcoded configuration.
-
-## What the Dashboard Shows
-
-| Tab | Data | Source |
-|---|---|---|
-| **Overview** | Combined daily activity chart with toggles for views, clones, downloads | `state.json` dailyHistory |
-| **Installs** | Downloads, clones, organic clones, activity windows (24h/7d/30d) | `state.json` dailyHistory |
-| **Views** | Page views, unique visitors, top referrers, popular pages (14-day snapshot) | `state.json` views/referrers/paths |
-| **Community** | Stars, forks, open issues, star history chart | `state.json` metadata + live GitHub API |
-| **Dev** | CI breakdown, raw vs organic clones, commit activity, code frequency, participation, punch card, contributors | `state.json` + live GitHub API |
 
 ## Files
 
